@@ -1,5 +1,8 @@
 # AIRA Form (Functions)
 
+Make form handling a breeze with AIRA's JavaScript functions. These user-friendly tools help you customize forms effortlessly, ensuring seamless user experiences and efficient data processing.
+
+
 ## 1. getElement : 
 
 Retrieves and returns a jQuery object representing the specified HTML element or elements identified by eleName.
@@ -824,3 +827,7 @@ code
 ```js
 code
 ```
+****
+Empower your workflow with AIRA - Your Trusted Partner in Automation Solutions. Transform the way you handle forms and enhance user experiences effortlessly. Experience the future of automation with AIRA's intuitive JavaScript functions.
+****
+****
