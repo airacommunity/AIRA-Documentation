@@ -562,8 +562,9 @@ Developers can call this function with the identifier or selector of the desired
 
 ### calling Example
 
-|Name| Age| Email|
-|Shivani |26| shivani@aira.fr|
+| Name     |Age                   |       Email                                     |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Shivani |26 | shivani@aira.fr   |
 
 #### By Field Name
 ```js
@@ -644,14 +645,20 @@ getGridValue(gridName, row, column)
 Developers can call this function with the identifier or selector of the desired grid, along with the row and column indices, to obtain the value of the specified table cell.
 
 
-### Example Input
+### calling Example
 
+| Name     |Age                   |       Email                                     |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Shivani |26 | shivani@aira.fr   |
+
+#### By Field Name
 ```js
-code
+let _element = getGridValue('datagrid',1,1);
+console.log("element : ", _element);
 ```
 ### Example Output
 ```js
-code
+element  attr  is :  26
 ```
 *****
 
