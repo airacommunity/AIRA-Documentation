@@ -1,6 +1,6 @@
 # AIRA Form (Functions)
 
-Make form handling a breeze with AIRA's JavaScript functions. These user-friendly tools help you customize forms effortlessly, ensuring seamless user experiences and efficient data processing.
+Make form handling a breeze with AIRA's JavaScript functions. These user-friendly tools help you customise forms effortlessly, ensuring seamless user experiences and efficient data processing.
 
 ## 1. getElement : 
 Retrieves and returns a jQuery object representing the specified HTML element or elements identified by element_name.
@@ -20,7 +20,7 @@ getElement(element_name)
 * The getElement function is designed to encapsulate an HTML element or a collection of elements within a jQuery object, allowing developers to leverage jQuery methods and utilities for enhanced manipulation and interaction.
 * It accepts a single parameter, element_name, which is a string representing the identifier or selector of the target element or elements.
 * The returned jQuery object provides a convenient interface for performing operations like DOM manipulation, event handling, and animation on the selected element(s).
-* This function bridges the gap between traditional JavaScript and jQuery, enabling developers to utilize jQuery features selectively within their applications.
+* This function bridges the gap between traditional JavaScript and jQuery, enabling developers to utilise jQuery features selectively within their applications.
 
 ### Usage:
 
@@ -89,7 +89,7 @@ getElementValue(element_name)
 * The getElementValue function is designed to provide a straightforward way to obtain the current value of an HTML element or form field in a web page.
 * It accepts a single parameter, element_name, which is a string representing the identifier or selector of the target element.
 * This function is particularly useful when developers need to retrieve user inputs from form fields, such as textboxes, dropdowns, checkboxes, or radio buttons.
-* The returned value can be utilized for validation, further processing, or manipulation within JavaScript applications.
+* The returned value can be utilised for validation, further processing, or manipulation within JavaScript applications.
 
 ### Usage:
 
@@ -212,7 +212,7 @@ getElementAttrValue(element_name, attrName)
 * The getElementAttrValue function is designed to obtain the value of a specific attribute (attrName) from a given HTML element.
 * It accepts two parameters: element_name (the identifier or selector of the target element) and attrName (the name of the attribute).
 * This function is particularly useful when developers need to retrieve specific attribute values, such as the src attribute of an image or the href attribute of a link.
-* The returned attribute value can be utilized for various purposes, including dynamic content loading or hyperlink navigation.
+* The returned attribute value can be utilised for various purposes, including dynamic content loading or hyperlink navigation.
 
 ### Usage:
 
@@ -271,7 +271,7 @@ Developers can call this function with the identifier or selector of the desired
 ```js
 <input class="form-control" type="email" name="email id="emailInput" >
 ```
-#### By Feild Name
+#### By Field Name
 ```js
 let _element = setFieldValue('email','john@aira.fr');
 ```
@@ -308,7 +308,7 @@ Developers can call this function with the identifier or selector of the desired
 ```js
 <input class="form-control" type="email" name="email id="emailInput" >
 ```
-#### By Feild Name
+#### By Field Name
 ```js
 let _element = setText('email','john@aira.fr');
 ```
@@ -351,7 +351,7 @@ setLabel(fieldName, fieldValue)
 ```js
 <input class="form-control" type="email" name="email” id="emailInput" >
 ```
-#### By Feild Name
+#### By Field Name
 ```js
 let _element = setLabel('email','john@aira.fr');
 ```
