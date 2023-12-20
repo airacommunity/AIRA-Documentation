@@ -230,13 +230,13 @@ Developers can call this function with the identifier or selector of the desired
 ```
 #### By Id
 ```js
-let _element = getElementAttribute(".imgClass", "href");
+let _element = getElementAttrValue(".imgClass", "href");
 console.log("element attr is: ", _element);
 ```
 
 #### By Class Name
 ```js
-let _element = getElementAttribute("#imgID", "href");
+let _element = getElementAttrValue("#imgID", "href");
 console.log("element attr is: ", _element);
 ```
 ### Example Output
