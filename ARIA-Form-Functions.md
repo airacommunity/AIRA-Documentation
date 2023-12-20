@@ -29,14 +29,49 @@ getElement(eleName)
 
 Developers can call this function with the identifier or selector of the desired HTML element to obtain a jQuery object representing that element.
 
-### Example Input
+### Calling Examples 
+
+#### By User Name
 
 ```js
-code
+let _element = getElement('input[name="data[email]"]');
+console.log("element is : ", _element);
+```
+#### By ID
+```js
+let _element = getElement('#emailInput');
+console.log("element is : ", _element);
+```
+#### By Class Name
+```js
+let _element = getElement('.form-control);
+console.log("element is : ", _element);
 ```
 ### Example Output
 ```js
-code
+Jquery Object -
+{
+    "length": 0,
+    "prevObject": {
+        "0": {
+            "location": {
+                "ancestorOrigins": {},
+                "href": "http://localhost:3000/app/cases",
+                "origin": "http://localhost:3000",
+                "protocol": "http:",
+                "host": "localhost:3000",
+                "hostname": "localhost",
+                "port": "3000",
+                "pathname": "/app/cases",
+                "search": "",
+                "hash": ""
+            },
+            "__reactEvents$c60powbs52k": {}
+        },
+        "length": 1
+    }
+}
+
 ```
 *****
 ## 2. getElementValue : 
@@ -65,16 +100,37 @@ getElementValue(eleName)
 
 Developers can call this function with the identifier or selector of the desired HTML element to obtain its current value.
 
-### Example Input
+### Calling Examples
+
+![1](https://github.com/airacommunity/ARIA-Documentation/assets/153823636/19350265-82a0-4447-888f-7b41f42b8514)
 
 ```js
-code
+<input class="form-control" type="email" name="data[email]" id="emailInput" value=" john@aira" >
+```
+#### By Field  Name
+
+```js
+let _element = getElementValue('input[name="data[email]"]');
+console.log("element value is: ", _element);
+```
+
+#### By Id
+```js
+let _element = getElementValue('#emailInput');
+console.log("element value is: ", _element);
+```
+
+#### By Class Name
+```js
+let _element = getElementValue('.form-control);
+console.log("element value is: ", _element);
 ```
 ### Example Output
+
 ```js
-code
+element  value is :  john@aira.fr
 ```
-*****
+****
 ## 3. getText : 
 
 Retrieves and returns the text content of the specified HTML element identified by eleName.
@@ -101,15 +157,44 @@ getText(eleName)
 
 Developers can call this function with the identifier or selector of the desired HTML element to obtain its text content.
 
-### Example Input
+### Calling Examples
 
 ```js
-code
+<input class="form-control" type="email" name="data[email]" id="emailInput" value=" john@aira.fr" >
+```
+#### By Field  Name
+
+```js
+let _element = getText('input[name="data[email]"]');
+console.log("element text is: ", _element);
+```
+
+#### By Id
+```js
+let _element = getText('#emailInput');
+console.log("element text is: ", _element);
+```
+
+#### By Class Name
+```js
+let _element = getText('.form-control);
+console.log("element text is: ", _element);
 ```
 ### Example Output
+
 ```js
-code
+element  text  is :  john@aira.fr
 ```
+
+#### Note
+
+| Options             | Description                                                                   |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Dropdown boxes and Radio buttons| It returns the displayed text of the field's selected option.     |
+|Checkboxes|It returns the text label of the marked or unmarked option. |
+||If this text label hasn't been configured, then by default,| 
+||a marked checkbox is "true" and an unmarked checkbox is "false"|
+|Textboxes, Textareas, Suggest and Hidden fields|It returns the value of the field.|
 *****
 ## 4. getElementAttrValue : 
 
@@ -138,15 +223,28 @@ getElementAttrValue(eleName, attrName)
 
 Developers can call this function with the identifier or selector of the desired HTML element and the name of the target attribute to obtain its value.
 
-### Example Input
+### Calling Examples
 
 ```js
-code
+<img classname="imgClass" id=”imgId” href="abc.com" />
+```
+#### By Id
+```js
+let _element = getElementAttribute(".imgClass", "href");
+console.log("element attr is: ", _element);
+```
+
+#### By Class Name
+```js
+let _element = getElementAttribute("#imgID", "href");
+console.log("element attr is: ", _element);
 ```
 ### Example Output
+
 ```js
-code
+element  attr  is :  abc.com
 ```
+
 *****
 
 ## 5.setFieldValue : 
@@ -175,14 +273,14 @@ setFieldValue(fieldName, fieldValue)
 
 Developers can call this function with the identifier or selector of the desired form field and the new value to update it.
 
-### Example Input
+### Calling Examples
 
 ```js
-code
+<input class="form-control" type="email" name="email id="emailInput" >
 ```
-### Example Output
+#### By Feild Name
 ```js
-code
+let _element = setFieldValue('email','john@aira.fr');
 ```
 *****
 
@@ -212,14 +310,25 @@ setText(fieldName, fieldValue)
 
 Developers can call this function with the identifier or selector of the desired form field and the new default text value to update it.
 
-### Example Input
+### Calling Examples
+
 ```js
-code
+<input class="form-control" type="email" name="email id="emailInput" >
 ```
-### Example Output
+#### By Feild Name
 ```js
-code
+let _element = setText('email','john@aira.fr');
 ```
+#### Note:
+| Options             | Description                                                                   |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Dropdown|Set the 'selected option'. This parameter must be one of the options already defined in the control.|
+||If the parameter does not exist in the dropdown's options, the dropdown will be displayed with its first option selected.|
+|Checkboxes|Set to the text label of the marked or unmarked option. Alternatively, to mark or unmark a checkbox, |
+||set its text as same as its text label in the "options" property. If this text label hasn't been configured, |
+||then by default, a marked checkbox is "true" and an unmarked checkbox is "false".|
+|Textboxes, textareas, suggest boxes and hidden controls|Set the new value of the field.|
+
 *****
 
 ## 7. setLabel : 
@@ -244,13 +353,14 @@ setLabel(fieldName, fieldValue)
 * This function is particularly useful when developers need to dynamically update the label text of a form field, providing improved accessibility or reflecting changes in the user interface.
 * The label text is set to the provided fieldValue, allowing for dynamic updates to the content of form field labels.
 
-### Example Input
+### Calling Examples
+
 ```js
-code
+<input class="form-control" type="email" name="email” id="emailInput" >
 ```
-### Example Output
+#### By Feild Name
 ```js
-code
+let _element = setLabel('email','john@aira.fr');
 ```
 *****
 
@@ -280,14 +390,25 @@ hideElement(eleName)
 
 Developers can call this function with the identifier or selector of the desired HTML element to hide it.
 
-### Example Input
+### Calling Examples
 
 ```js
-code
+<input class="form-control" type="email" name="data[email]” id="emailInput" >
 ```
-### Example Output
+#### By Field  Name
+
 ```js
-code
+let _element = hideElement('input[name="data[email]"]');
+```
+
+#### By Id
+```js
+let _element = hideElement('#emailInput');
+```
+
+#### By Class Name
+```js
+let _element = hideElement('.form-control);
 ```
 *****
 
@@ -316,14 +437,25 @@ showElement(eleName)
 
 Developers can call this function with the identifier or selector of the desired HTML element to show it.
 
-### Example Input
+### Calling Examples
 
 ```js
-code
+<input class="form-control" type="email" name="data[email]” id="emailInput" hidden >
 ```
-### Example Output
+#### By Field  Name
+
 ```js
-code
+let _element = showElement('input[name="data[email]"]');
+```
+
+#### By Id
+```js
+let _element = showElement('#emailInput');
+```
+
+#### By Class Name
+```js
+let _element = showElement('.form-control);
 ```
 *****
 
@@ -353,14 +485,12 @@ getGridValues(gridName)
 
 Developers can call this function with the identifier or selector of the desired grid to obtain its data values.
 
-### Example Input
+### Calling Examples
+
+#### By Field  Name
 
 ```js
-code
-```
-### Example Output
-```js
-code
+let _element = getGridValues('datagrid');
 ```
 *****
 
@@ -394,14 +524,13 @@ setGridDataValue(gridName, gridValues, addNew)
 
 Developers can call this function with the identifier or selector of the desired grid, an array of new data values, and a boolean flag indicating whether to add a new row or replace existing data.
 
-### Example Input
+### Calling Examples
+
+#### By Field  Name
 
 ```js
-code
-```
-### Example Output
-```js
-code
+let _element = setGridDataValue('datagrid',[{name:”shivani”,
+age:”26”,email:”shivani@aira.fr”}],false);
 ```
 *****
 
