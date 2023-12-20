@@ -556,7 +556,7 @@ Developers can call this function with the identifier or selector of the desired
 ### calling Example
 
 | Name     |Age                   |       Email                                     |
-| ------------------- | ----------------------------------------------------------------------------- |
+| ------------------- | ------------------------------------|----------------------------------------- |
 | Shivani |26 | shivani@aira.fr   |
 
 #### By Field Name
@@ -582,7 +582,7 @@ getGridHeader(gridName)
 ### Parameter
 
 | Parameter Name      | Description                                                                   |
-| ------------------- | ----------------------------------------------------------------------------- |
+| ------------------- | -----------------|------------------------------------------------------------ |
 | gridName | The identifier or selector for the target grid. |
 
 ### Explanation:
@@ -599,7 +599,7 @@ Developers can call this function with the identifier or selector of the desired
 ### calling Example
 
 | Name     |Age                   |       Email                                     |
-| ------------------- | ----------------------------------------------------------------------------- |
+| ------------------- | -----------------------|------------------------------------------------------ |
 | Shivani |26 | shivani@aira.fr   |
 
 ![2](https://github.com/airacommunity/ARIA-Documentation/assets/153823636/01a3d4d5-c27b-4fdf-9e34-e940b6b64395)
@@ -656,7 +656,7 @@ Developers can call this function with the identifier or selector of the desired
 ### calling Example
 
 | Name     |Age                   |       Email                                     |
-| ------------------- | ----------------------------------------------------------------------------- |
+| ------------------- | --------------------------------------|--------------------------------------- |
 | Shivani |26 | shivani@aira.fr   |
 
 ![2](https://github.com/airacommunity/ARIA-Documentation/assets/153823636/01a3d4d5-c27b-4fdf-9e34-e940b6b64395)
@@ -820,7 +820,7 @@ Developers can call this function with the identifier or selector of the desired
 ### calling Example
 
 | Name     |Age                   |       Email                                     |
-| ------------------- | ----------------------------------------------------------------------------- |
+| ------------------- | --------------------------------|--------------------------------------------- |
 | Shivani |26 | shivani@aira.fr   |
 
 ![2](https://github.com/airacommunity/ARIA-Documentation/assets/153823636/01a3d4d5-c27b-4fdf-9e34-e940b6b64395)
