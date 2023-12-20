@@ -7,18 +7,18 @@ Retrieves and returns a jQuery object representing the specified HTML element or
 
 ### Syntax
 ```js
-getElement(eleName)
+getElement(element_name)
 ```
 ### Parameter
 
 | Parameter Name | Description                                                       |
 | ---------------| ----------------------------------------------------------------- |
-| eleName        |  The identifier or selector for the target element or elements.   |
+| element_name       |  The identifier or selector for the target element or elements.   |
 
 ### Explanation:
 
 * The getElement function is designed to encapsulate an HTML element or a collection of elements within a jQuery object, allowing developers to leverage jQuery methods and utilities for enhanced manipulation and interaction.
-* It accepts a single parameter, eleName, which is a string representing the identifier or selector of the target element or elements.
+* It accepts a single parameter, element_name, which is a string representing the identifier or selector of the target element or elements.
 * The returned jQuery object provides a convenient interface for performing operations like DOM manipulation, event handling, and animation on the selected element(s).
 * This function bridges the gap between traditional JavaScript and jQuery, enabling developers to utilize jQuery features selectively within their applications.
 
