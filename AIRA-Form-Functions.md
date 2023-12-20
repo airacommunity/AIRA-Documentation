@@ -3,7 +3,7 @@
 Make form handling a breeze with AIRA's JavaScript functions. These user-friendly tools help you customize forms effortlessly, ensuring seamless user experiences and efficient data processing.
 
 ## 1. getElement : 
-Retrieves and returns a jQuery object representing the specified HTML element or elements identified by eleName.
+Retrieves and returns a jQuery object representing the specified HTML element or elements identified by element_name.
 
 ### Syntax
 ```js
@@ -71,23 +71,23 @@ Jquery Object -
 *****
 ## 2. getElementValue : 
 
-Retrieves and returns the current value of the specified HTML element or form field identified by eleName.
+Retrieves and returns the current value of the specified HTML element or form field identified by element_name.
 
 ### Syntax
 
 ```js
-getElementValue(eleName)
+getElementValue(element_name)
 ```
 ### Parameter
 
 | Parameter Name      | Description                                                                   |
 | ------------------- | ----------------------------------------------------------------------------- |
-| eleName             | The identifier or selector for the target element or form field.              |
+| element_name             | The identifier or selector for the target element or form field.              |
 
 ### Explanation:
 
 * The getElementValue function is designed to provide a straightforward way to obtain the current value of an HTML element or form field in a web page.
-* It accepts a single parameter, eleName, which is a string representing the identifier or selector of the target element.
+* It accepts a single parameter, element_name, which is a string representing the identifier or selector of the target element.
 * This function is particularly useful when developers need to retrieve user inputs from form fields, such as textboxes, dropdowns, checkboxes, or radio buttons.
 * The returned value can be utilized for validation, further processing, or manipulation within JavaScript applications.
 
@@ -128,23 +128,23 @@ element  value is :  john@aira.fr
 ****
 ## 3. getText : 
 
-Retrieves and returns the text content of the specified HTML element identified by eleName.
+Retrieves and returns the text content of the specified HTML element identified by element_name.
 
 ### Syntax
 
 ```js
-getText(eleName)
+getText(element_name)
 ```
 ### Parameter
 
 | Parameter Name      | Description                                                                   |
 | ------------------- | ----------------------------------------------------------------------------- |
-| eleName             | The identifier or selector for the target element.                            |
+| element_name             | The identifier or selector for the target element.                            |
 
 ### Explanation:
 
 * The getText function is designed to fetch and provide the textual content of a specific HTML element in a web page.
-* It accepts a single parameter, eleName, which is a string representing the identifier or selector of the target element.
+* It accepts a single parameter, element_name, which is a string representing the identifier or selector of the target element.
 * This function is particularly useful when developers need to extract text from elements such as paragraphs, headings, or any other container element.
 * The returned text content can be used for displaying information, processing, or further manipulation within JavaScript applications.
 
@@ -193,24 +193,24 @@ element  text  is :  john@aira.fr
 *****
 ## 4. getElementAttrValue : 
 
-Retrieves and returns the value of the specified attribute (attrName) of the HTML element identified by eleName.
+Retrieves and returns the value of the specified attribute (attrName) of the HTML element identified by element_name.
 
 ### Syntax
 
 ```js
-getElementAttrValue(eleName, attrName)
+getElementAttrValue(element_name, attrName)
 ```
 ### Parameter
 
 | Parameter Name      | Description                                                                   |
 | ------------------- | ----------------------------------------------------------------------------- |
-|   eleName           |    The identifier or selector for the target element.                         |   
+|   element_name           |    The identifier or selector for the target element.                         |   
 |   attrName          |   The name of the attribute whose value is to be retrieved.                   |   
 
 ### Explanation:
 
 * The getElementAttrValue function is designed to obtain the value of a specific attribute (attrName) from a given HTML element.
-* It accepts two parameters: eleName (the identifier or selector of the target element) and attrName (the name of the attribute).
+* It accepts two parameters: element_name (the identifier or selector of the target element) and attrName (the name of the attribute).
 * This function is particularly useful when developers need to retrieve specific attribute values, such as the src attribute of an image or the href attribute of a link.
 * The returned attribute value can be utilized for various purposes, including dynamic content loading or hyperlink navigation.
 
@@ -359,23 +359,23 @@ let _element = setLabel('email','john@aira.fr');
 
 ## 8. hideElement : 
 
-Hides the specified HTML element identified by eleName from the user interface.
+Hides the specified HTML element identified by element_name from the user interface.
 
 ### Syntax
 
 ```js
-hideElement(eleName)
+hideElement(element_name)
 ```
 ### Parameter
 
 | Parameter Name      | Description                                                                   |
 | ------------------- | ----------------------------------------------------------------------------- |
-| eleName | The identifier or selector for the target element to be hidden. |
+| element_name | The identifier or selector for the target element to be hidden. |
 
 ### Explanation:
 
 * The hideElement function is designed to make a specified HTML element invisible on the user interface.
-* It accepts a single parameter, eleName, which is a string representing the identifier or selector of the target element.
+* It accepts a single parameter, element_name, which is a string representing the identifier or selector of the target element.
 * This function is particularly useful when developers need to dynamically control the visibility of elements based on certain conditions or user interactions.
 * The targeted element is hidden from view, effectively removing it from the user's screen.
 
@@ -407,22 +407,22 @@ let _element = hideElement('.form-control);
 
 ## 9. showElement : 
 
-Displays the specified HTML element identified by eleName on the user interface if it is currently hidden.
+Displays the specified HTML element identified by element_name on the user interface if it is currently hidden.
 ### Syntax
 
 ```js
-showElement(eleName)
+showElement(element_name)
 ```
 ### Parameter
 
 | Parameter Name      | Description                                                                   |
 | ------------------- | ----------------------------------------------------------------------------- |
-| eleName | The identifier or selector for the target element to be shown. |
+| element_name | The identifier or selector for the target element to be shown. |
 
 ### Explanation:
 
 * The showElement function is designed to make a specified HTML element visible on the user interface if it is currently hidden.
-* It accepts a single parameter, eleName, which is a string representing the identifier or selector of the target element.
+* It accepts a single parameter, element_name, which is a string representing the identifier or selector of the target element.
 * This function is particularly useful when developers need to dynamically control the visibility of elements based on certain conditions or user interactions.
 * If the targeted element is hidden, this function makes it visible, allowing it to be displayed to the user.
 
@@ -951,24 +951,24 @@ console.log("output is : ", _element);
 
 ## 22. disableValidation : 
 
-Disables the validation for the specified input field identified by eleName by setting the "required" attribute to false.
+Disables the validation for the specified input field identified by element_name by setting the "required" attribute to false.
 
 ### Syntax
 
 ```js
-disableValidation(eleName)
+disableValidation(element_name)
 ```
 ### Parameter
 
 | Parameter Name      | Description                                                                   |
 | ------------------- | ----------------------------------------------------------------------------- |
-| eleName | The identifier or selector for the target input field. |
+| element_name | The identifier or selector for the target input field. |
 
 ### Explanation:
 
 * The disableValidation function is designed to turn off validation for a specific input field by removing the "required" attribute.
 * It accepts a single parameter:
-  * eleName: The identifier or selector of the target input field.
+  * element_name: The identifier or selector of the target input field.
 * This function is particularly useful when developers need to temporarily or conditionally disable validation for a specific input field, allowing for flexibility in form submission.
 
 ### Usage:
