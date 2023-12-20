@@ -560,14 +560,19 @@ getNoOfRows(gridName)
 
 Developers can call this function with the identifier or selector of the desired grid to obtain the number of rows.
 
-### Example Input
+### calling Example
 
+|Name| Age| Email|
+|Shivani |26| shivani@aira.fr|
+
+#### By Field Name
 ```js
-code
+let _element = getNoOfRows('datagrid');
+console.log("element : ", _element);;
 ```
 ### Example Output
 ```js
-code
+element  attr  is :  1
 ```
 *****
 
