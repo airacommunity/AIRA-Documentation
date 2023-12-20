@@ -2,13 +2,10 @@
 
 Make form handling a breeze with AIRA's JavaScript functions. These user-friendly tools help you customize forms effortlessly, ensuring seamless user experiences and efficient data processing.
 
-
 ## 1. getElement : 
-
 Retrieves and returns a jQuery object representing the specified HTML element or elements identified by eleName.
 
 ### Syntax
-
 ```js
 getElement(eleName)
 ```
@@ -32,7 +29,6 @@ Developers can call this function with the identifier or selector of the desired
 ### Calling Examples 
 
 #### By User Name
-
 ```js
 let _element = getElement('input[name="data[email]"]');
 console.log("element is : ", _element);
@@ -71,7 +67,6 @@ Jquery Object -
         "length": 1
     }
 }
-
 ```
 *****
 ## 2. getElementValue : 
@@ -162,7 +157,7 @@ Developers can call this function with the identifier or selector of the desired
 ```js
 <input class="form-control" type="email" name="data[email]" id="emailInput" value=" john@aira.fr" >
 ```
-#### By Field  Name
+#### By Field Name
 
 ```js
 let _element = getText('input[name="data[email]"]');
@@ -244,9 +239,7 @@ console.log("element attr is: ", _element);
 ```js
 element  attr  is :  abc.com
 ```
-
 *****
-
 ## 5.setFieldValue : 
 
 Updates the value of the specified form field identified by fieldName with the provided fieldValue.
@@ -603,14 +596,29 @@ getGridHeader(gridName)
 
 Developers can call this function with the identifier or selector of the desired grid to obtain its table header values.
 
-### Example Input
+### calling Example
 
+| Name     |Age                   |       Email                                     |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Shivani |26 | shivani@aira.fr   |
+
+![2](https://github.com/airacommunity/ARIA-Documentation/assets/153823636/01a3d4d5-c27b-4fdf-9e34-e940b6b64395)
+
+
+#### By Field Name
 ```js
-code
+let _element = getGridHeader(".formio-component-dataGrid", 0, 1)
+console.log("output is : ", _element);
 ```
 ### Example Output
 ```js
-code
+ [
+    "Name",
+    "Age",
+    "Email",
+    "Add/Remove"
+]
+
 ```
 *****
 
@@ -651,14 +659,17 @@ Developers can call this function with the identifier or selector of the desired
 | ------------------- | ----------------------------------------------------------------------------- |
 | Shivani |26 | shivani@aira.fr   |
 
+![2](https://github.com/airacommunity/ARIA-Documentation/assets/153823636/01a3d4d5-c27b-4fdf-9e34-e940b6b64395)
+
+
 #### By Field Name
 ```js
-let _element = getGridValue('datagrid',1,1);
-console.log("element : ", _element);
+let _element = getGridValue(".formio-component-dataGrid", 0, 1)
+console.log("element value is : ", _element);
 ```
 ### Example Output
 ```js
-element  attr  is :  26
+Element value is  :  23
 ```
 *****
 
@@ -690,17 +701,7 @@ deleteGridRow(gridName, rowInd)
 
 Developers can call this function with the identifier or selector of the desired grid and the index of the row to be deleted.
 
-### Example Input
-
-```js
-code
-```
-### Example Output
-```js
-code
-```
-*****
-
+******
 ## 16. addGridRow : 
 
 Adds a new row at the beginning of the table within the grid identified by gridName.
@@ -727,15 +728,6 @@ Explanation:
 
 Developers can call this function with the identifier or selector of the desired grid to add a new row at the beginning of the table.
 
-### Example Input
-
-```js
-code
-```
-### Example Output
-```js
-code
-```
 *****
 
 ## 17. hideColumn : 
@@ -766,15 +758,6 @@ hideColumn(gridName,columnInd)
 
 Developers can call this function with the identifier or selector of the desired grid and the index of the column to be hidden.
 
-### Example Input
-
-```js
-code
-```
-### Example Output
-```js
-code
-```
 *****
 
 ## 18. showColumn : 
@@ -805,15 +788,7 @@ showColumn(gridName,columnInd)
 
 Developers can call this function with the identifier or selector of the desired grid and the index of the hidden column to be shown.
 
-### Example Input
 
-```js
-code
-```
-### Example Output
-```js
-code
-```
 *****
 
 ## 19. getGridData : 
@@ -842,14 +817,30 @@ getGridData(gridName)
 
 Developers can call this function with the identifier or selector of the desired grid to obtain its complete data set.
 
-### Example Input
+### calling Example
 
+| Name     |Age                   |       Email                                     |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Shivani |26 | shivani@aira.fr   |
+
+![2](https://github.com/airacommunity/ARIA-Documentation/assets/153823636/01a3d4d5-c27b-4fdf-9e34-e940b6b64395)
+
+
+#### By Field Name
 ```js
-code
+let _element = getGridData(".formio-component-dataGrid")
+console.log("output is : ", _element);
 ```
 ### Example Output
 ```js
-code
+[
+    [
+        "Ajay SOni",
+        "23",
+        "soni.ajay79@aira.fr",
+        null
+    ]
+]
 ```
 *****
 
@@ -883,14 +874,32 @@ getControl(gridName, rowInd, columnInd)
 
 Developers can call this function with the identifier or selector of the desired grid, along with the row and column indices, to obtain the jQuery object representing the specified table cell.
 
-### Example Input
+### Calling Example
 
+| Name | Count| E-Mail | Add/Remove|
+| -----| -----|--------|---------- |
+| Shivani | 26 | shivani@aira.fr|➕ ❌|
+
+![2](https://github.com/airacommunity/ARIA-Documentation/assets/153823636/01a3d4d5-c27b-4fdf-9e34-e940b6b64395)
+
+By Element Name
 ```js
-code
+let _element = getControl("dataGrid",0, 1)
+console.log("output is : ", _element);
 ```
+
 ### Example Output
 ```js
-code
+Jquery object 
+{
+    "0": {},
+    "length": 1,
+    "prevObject": {
+        "0": {},
+        "length": 1
+    }
+}
+
 ```
 *****
 
@@ -922,14 +931,21 @@ getSummary(gridName, columnInd)
 
 Developers can call this function with the identifier or selector of the desired grid and the index of the column to obtain the summary of its values.
 
-### Example Input
+### Calling Example
 
+| Name | Count| E-Mail | Add/Remove|
+| -----| -----|--------|---------- |
+| Shivani | 26 | shivani@aira.fr|➕ ❌|
+
+#### By Field Name
 ```js
-code
+let _element = getControl(".formio-component-dataGrid",1)
+console.log("output is : ", _element);
 ```
+
 ### Example Output
 ```js
-code
+26
 ```
 *****
 
@@ -959,14 +975,6 @@ disableValidation(eleName)
 
 Developers can call this function with the identifier or selector of the desired input field to disable its validation.
 
-### Example Input
-
-```js
-code
-```
-### Example Output
-```js
-code
 ```
 ****
 Empower your workflow with AIRA - Your Trusted Partner in Automation Solutions. Transform the way you handle forms and enhance user experiences effortlessly. Experience the future of automation with AIRA's intuitive JavaScript functions.
