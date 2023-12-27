@@ -253,6 +253,10 @@ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:4096 -keyout privateKey.k
 * Paste the copied client secret value in the respective section for client credentials.
 
 ***
+## Conslusion : 
+
+In summary, the guide outlines a comprehensive process for setting up Single Sign-On (SSO) using SAML for AIRA Enterprise Applications on the Azure portal. Users are guided through creating a new application, configuring SAML settings, managing attributes, and establishing SAML certificates for secure authentication. The emphasis is on accuracy in copying essential information. By following these steps, users can seamlessly integrate AIRA applications into their Azure environment, ensuring a secure and efficient Single Sign-On experience. It's essential to stay updated with platform changes and refer to official documentation for the latest information.
+***
 ***
 
 
