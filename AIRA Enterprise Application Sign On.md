@@ -102,7 +102,8 @@ Begin the sign-on process by logging into your Azure account. If you don't have 
 ### Configure Unique User Identifier (Name ID)
 
 ![13](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/a03fb881-5065-46c4-a012-6b7a4c5fe523)
-Once in the "Edit Attributes & Claims" section, search for "Unique User Identifier (Name ID)."
+
+* Once in the "Edit Attributes & Claims" section, search for "Unique User Identifier (Name ID)."
 
 ![13-1](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/a49dda12-33cc-480f-a564-d2904cc4141b)
 
@@ -150,7 +151,8 @@ Once in the "Edit Attributes & Claims" section, search for "Unique User Identifi
 Code
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:4096 -keyout privateKey.key -out certificate.crt
 ```
-Step 13: Download Certificate (Base64)
+
+## Step 13: Download Certificate (Base64)
 ![19](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/2ba273d7-40a4-4bce-b3da-8887df8c59e5)
 
 * Within the "SAML Certificates" section, find the "Download Certificate (Base64)" subsection.
@@ -162,12 +164,12 @@ Step 13: Download Certificate (Base64)
 
 ![1 2](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/b14babdd-1c3b-4edc-be20-d7c67a39c346)
 
-Within the Admin section, locate and select the "SAML Configuration" section.
-In the SAML Configuration section, find the area for uploading certificates.
+* Within the Admin section, locate and select the "SAML Configuration" section.
+* In the SAML Configuration section, find the area for uploading certificates.
 
 ![1 8](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/77c8e655-cac4-4d35-b3aa-e6e1d1ae52bc)
 
-Upload the Base64 certificate that you downloaded.
+*  the Base64 certificate that you downloaded.
 
 ## Step 14: Retrieve Client ID and Tenant ID
 
@@ -181,7 +183,7 @@ Upload the Base64 certificate that you downloaded.
 
 ![22](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/586f3826-5946-44c6-92a2-aca6d3c7fefd)
 
-Choose the name of the application you generated.
+* Choose the name of the application you generated.
 
 ### Copy Client ID and Tenant ID
 
@@ -249,6 +251,9 @@ Choose the name of the application you generated.
 ![1 7](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/fba2722f-003d-4191-8088-5e8fd01c3ffd)
 
 * Paste the copied client secret value in the respective section for client credentials.
+
+***
+***
 
 
 
