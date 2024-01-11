@@ -151,8 +151,33 @@ Begin the sign-on process by logging into your Azure account. If you don't have 
 Code
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:4096 -keyout privateKey.key -out certificate.crt
 ```
+## Step 13 : Open and Copy Public and Private Keys
+* Open the generated public key (certificate.cer) and private key (privateKey.key) files using a text editor like Notepad or any other code editor.
+* Copy the content of the public key file.
+  
+![1 1](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/fff29d2d-fdfe-4431-9921-5461b7a1b305)
+  
 
-## Step 13: Download Certificate (Base64)
+* Open the AIRA platform and navigate to the "Admin" section from the left navigation bar.
+  
+![1 2](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/73318ce2-6f13-4b55-b50d-d1eeaaedd787)
+
+
+* Within the Admin section, select "SAML Configuration.
+
+
+![Screenshot 2024-01-11 183517](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/0f502411-289b-49f0-8bca-1bd28c608efc)
+
+
+* Locate the field for "Public Key" and paste the content of the copied public key into this field.
+* Now, go back to the text editor and copy the content of the private key file.
+* Return to the AIRA "SAML Configuration" section.
+* Find the field for "Private Key" and paste the content of the copied private key into this field.
+* Save the changes to apply the public and private key configuration for SAML authentication in AIRA.
+
+
+
+## Step 14: Download Certificate (Base64)
 ![19](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/2ba273d7-40a4-4bce-b3da-8887df8c59e5)
 
 * Within the "SAML Certificates" section, find the "Download Certificate (Base64)" subsection.
@@ -171,7 +196,7 @@ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:4096 -keyout privateKey.k
 
 *  the Base64 certificate that you downloaded.
 
-## Step 14: Retrieve Client ID and Tenant ID
+## Step 15: Retrieve Client ID and Tenant ID
 
 ![20](https://github.com/airacommunity/AIRA-Documentation/assets/153823636/3378e25f-0eb4-4ae0-9c7d-b8ef3ebbe418)
 
