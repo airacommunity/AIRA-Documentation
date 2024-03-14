@@ -84,7 +84,7 @@ yum install -y mysql-community-server
 ```
 
 ```
-*******I edited the /etd/yum.repos.d/Mysql80.repo file and changed all the "gpgcheck=1" lines to "gpgcheck=0"
+*******I edited the /etc/yum.repos.d/Mysql80.repo file and changed all the "gpgcheck=1" lines to "gpgcheck=0"
 ```
 
 Start the MySQL service and set it to start automatically at boot.
