@@ -6,14 +6,14 @@ The AIRA installation guide provides step-by-step instructions for deploying AIR
 
 |     AIRA Version    |             Platform             | Notes |
 |:-------------------:|:--------------------------------:|:-----:|
-| aira_build_08012024 | CentOS/RHEL 8.x (Latest version) | [Stack](https://github.com/airacommunity/AIRA-Documentation/blob/main/AIRA%20Server%20Configuration%20Setup.md) |
+| aira_build_08012024 | CentOS/RHEL 7.x | [Stack](https://github.com/airacommunity/AIRA-Documentation/blob/main/AIRA%20Server%20Configuration%20Setup.md) |
 
 Before installing AIRA, check the Installation Requirements to determine whether your server meets the necessary hardware and software requirements. Ensure you have an Internet connection to download any necessary third-party components that your AIRA installation might require.
 
 ## Step 1 : Download AIRA Enterprise
 Before proceeding with the installation, ensure that your server meets the hardware and software requirements outlined in the installation guide.
 
-Open a terminal on your CentOS/RHEL 8.x server.
+Open a terminal on your CentOS/RHEL 7.x server.
 
 Download the AIRA Enterprise package from the specified link. You can use a tool like wget to retrieve the file directly to your server:
 
@@ -330,7 +330,7 @@ service nginx restart
 Enter the IP address of your server in the address bar, followed by the corresponding port numbers. If using default ports:
 
 ## Conclusion
-Congratulations! You have successfully completed the installation of AIRA on your CentOS/RHEL 8.x server. By following the provided steps, you've configured the necessary components, set file permissions, and accessed the AIRA installation wizard to finalise the setup.
+Congratulations! You have successfully completed the installation of AIRA on your CentOS/RHEL 7.x server. By following the provided steps, you've configured the necessary components, set file permissions, and accessed the AIRA installation wizard to finalise the setup.
 
 As you proceed, it is essential to regularly check for updates, security patches, and any additional configuration requirements for optimal performance and security. Refer to the official AIRA documentation for any post-installation tasks, maintenance guidelines, or troubleshooting tips.
 
