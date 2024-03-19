@@ -35,7 +35,7 @@ The stack procedure outlined below has been successfully used in AIRA's cloud en
 
 ## Environment
 
-The following instructions can be used to prepare the stack for AIRA installation if you already have the most recent version of CentOS 7.x Core or Desktop installed, have the necessary rights (by typing sudo su and entering the administrator password), and have the necessary files.
+The following instructions can be used to prepare the stack for AIRA installation if you already have the most recent version of CentOS 8.x Core or Desktop installed, have the necessary rights (by typing sudo su and entering the administrator password), and have the necessary files.
 
 ## Step 1 : Update Server
 
