@@ -2,14 +2,14 @@
 
 ## Overview
 
-This guide provides detailed information on configuring the database and application server for installing AIRA on the **CentOS/RHEL 8.x platform**. The recommended stack has been thoroughly tested and is supported by the AIRA quality control team. The installation is intended for use with NGINX as the web server.
+This guide provides detailed information on configuring the database and application server for installing AIRA on the **CentOS/RHEL 7.x platform**. The recommended stack has been thoroughly tested and is supported by the AIRA quality control team. The installation is intended for use with NGINX as the web server.
 
 ## Stack Components
 
 <table>
   <tr>
     <td>Platform</td>
-    <td>CentOS/RHEL 8.x (Latest Available Version)</td>
+    <td>CentOS/RHEL 7.x </td>
   </tr>
   <tr>
     <td>Database</td>
@@ -35,7 +35,7 @@ The stack procedure outlined below has been successfully used in AIRA's cloud en
 
 ## Environment
 
-The following instructions can be used to prepare the stack for AIRA installation if you already have the most recent version of CentOS 8.x Core or Desktop installed, have the necessary rights (by typing sudo su and entering the administrator password), and have the necessary files.
+The following instructions can be used to prepare the stack for AIRA installation if you already have the most recent version of CentOS 7.x Core or Desktop installed, have the necessary rights (by typing sudo su and entering the administrator password), and have the necessary files.
 
 ## Step 1 : Update Server
 
@@ -68,7 +68,7 @@ $ sudo yum install yarn
 ```
 
 ## Step 5 : Remove MariaDB
-By default CentOS 8.x comes with some modules of MariaDB installed so we have to remove MariaDB, a database management system.
+By default CentOS 7.x comes with some modules of MariaDB installed so we have to remove MariaDB, a database management system.
 
 ```
 $ yum -y remove mariadb*
