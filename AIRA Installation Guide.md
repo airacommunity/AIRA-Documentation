@@ -60,7 +60,7 @@ Verify the changes by checking the permissions and owner of the AIRA directory u
 ls -l /opt/aira/core/
 ```
 
-Ensure that the output reflects the new ownership, and all files are owned by the NGINX user (`nginx`). The result should resemble something like:
+Ensure that the output reflects the new ownership, and all files are owned by the NGINX user (`nginx`). 
 
 ## Step 4 : Install Node Modules of Backend and Start Conductor Commands
 
@@ -326,9 +326,6 @@ service nginx restart
     ```
     https://127.0.0.1:8888
     ```
-
-Enter the IP address of your server in the address bar, followed by the corresponding port numbers. If using default ports:
-
 ## Conclusion
 Congratulations! You have successfully completed the installation of AIRA on your CentOS/RHEL 7.x server. By following the provided steps, you've configured the necessary components, set file permissions, and accessed the AIRA installation wizard to finalise the setup.
 
